@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#b0c5d8"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@drawable/chatmenu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="단어연습"
+            android:textSize="25dp"
+            android:layout_alignLeft="@id/imgTitle"
+            android:layout_alignTop="@id/imgTitle"
+            android:layout_alignRight="@id/imgTitle"
+            android:layout_alignBottom="@id/imgTitle"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="80dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvWordAccuracy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:textAlignment="viewEnd"
+            android:text="정확도 : 0% "
+            android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tvWordType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:text=" 평균 타수 : 0타 "
+                android:layout_weight="0.9"/>
+        <TextView
+            android:id="@+id/tvWordTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:text=" 시간 : 0초"
+            />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvWordQnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:text="시험용"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="-100dp">
+
+        <ImageView
+            android:id="@+id/imgQmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/questionmessage" />
+
+        <TextView
+            android:id="@+id/tvWordQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imgQmessage"
+            android:layout_alignTop="@id/imgQmessage"
+            android:layout_alignRight="@id/imgQmessage"
+            android:layout_alignBottom="@id/imgQmessage"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="-1dp"
+            android:gravity="center"
+            android:text="문제"
+            android:textSize="40dp"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgAmessage"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/answermessage" />
+
+        <TextView
+            android:id="@+id/tvWordA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imgAmessage"
+            android:layout_alignTop="@id/imgAmessage"
+            android:layout_alignRight="@id/imgAmessage"
+            android:layout_alignBottom="@id/imgAmessage"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="-1dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="40dp"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edtWord"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/btnwordInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffff00"
+            android:text="입력"
+            android:textSize="20dp"
+            android:layout_margin="5dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
